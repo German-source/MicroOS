@@ -9,5 +9,5 @@ Time	KEYWORD1
 mode	KEYWORD2
 control	KEYWORD2
 getLeft	KEYWORD2
-MicroOS KEYWORD1
-TimerControl    KEYWORD1
+MicroOS	KEYWORD1
+TimerControl	KEYWORD1
