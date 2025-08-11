@@ -1,6 +1,4 @@
 #pragma once
-#include "TimerControl.h"
-#include "Manage.h"
 
 class __attach__ {
     public:

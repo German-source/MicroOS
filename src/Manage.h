@@ -1,6 +1,5 @@
-#pragma once
-#include "TimerControl.h"
-#include "Attach.h"
+#pragma once 
+
 class __manage__ {
     public:
     void mode(bool mode) {

@@ -17,10 +17,10 @@ void loop() {
 }
 
 void attr() {
-    pinMode(LED_BUILTIN, !digitalRead(LED_BUILTIN));       // Переключаем светодиод
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));  // Переключаем светодиод
 }
 
 void build() {
     static Timer tmr1 = 0;                                 // Таймер
-    Attach.tick(tmr1, 1000, attr)                          // Подключаем таймер
+    Attach.tick(tmr1, 1000, attr);                         // Подключаем таймер
 }

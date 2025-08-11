@@ -5,7 +5,7 @@
 #include <MicroOS.h>
 
 void tmrControl() {
-    pinMode(LED_BUILTIN, !digitalRead(LED_BUILTIN));       // Переключаем светодиод
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));  // Переключаем светодиод
 }
 
 void build() {
