@@ -13,7 +13,7 @@
  - [Attach.h](#attachh)
  - [Примеры](#примеры)
     - Attach
-    - Manage
+    - Manager
     - Timer
 ## TimerControl.h
 ```c++
@@ -52,5 +52,5 @@ void Attach.tick(timer32_t &tmr, timer32_t period, void (*fn)());  // Функц
 ```
 ## Примеры
  - [Attach](https://github.com/German-source/MicroOS/blob/main/examples/AttachExample/AttachExample.ino)
- - [Manage](https://github.com/German-source/MicroOS/blob/main/examples/ManageExample/ManageExample.ino)
+ - [Manager](https://github.com/German-source/MicroOS/blob/main/examples/ManagerExample/ManagerExample.ino)
  - [Timer](https://github.com/German-source/MicroOS/blob/main/examples/TimerExample/TimerExample.ino)
