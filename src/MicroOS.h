@@ -1,3 +1,4 @@
 #pragma once
 #include "TimerControl.h"
-#include "__manage__.h"
+#include "Manage.h"
+#include "Attach.h"

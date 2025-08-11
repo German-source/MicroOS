@@ -6,8 +6,8 @@ typedef timer32_t Timer;
 #define MICROS false
 class __TMR__ {
     public:
-    void reset(timer32_t &tmr) {
-        tmr = read();
+    timer32_t reset(timer32_t &tmr) {
+        return tmr = read();
     }
     timer32_t read() {
         return (_is) ? millis() : micros();
