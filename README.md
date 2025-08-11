@@ -10,8 +10,14 @@
  Оглавление:
  - [TimerControl.h](#timercontrolh)
  - [Manage.h](#manageh)
+ - [Attach.h](#attachh)
+ - [Примеры](#примеры)
+    - Attach
+    - Manage
+    - Timer
 ## TimerControl.h
 ```c++
+// Пример: https://clck.ru/3NbieR
 // Константы:
 #define MILLIS true
 #define MICROS false
@@ -32,5 +38,19 @@ timer32_t Time.getLeft(timer32_t&);                 // Получить врем
 // Классы:
 // Экземпляр класса:
 void System.mode(bool mode);                        // Установить режим (MILLIS/MICROS)
-void control(bool of, void (*fn)());                // Условие срабатывания. См. https://clck.ru/3NbiAP
+void System.control(bool of, void (*fn)());         // Условие срабатывания. См. https://clck.ru/3NbiAP
+void System.attach(void (*fn)());                   // Обработчик. См. https://clck.ru/3NbiAP
+void System.tick(void);                             // Вызов обработчика.
+timer32_t System.read(void);                        // Время с момента запуска.
 ```
+## Attach.h
+```c++
+// Наследует методы от Manage.h
+// Классы:
+// Экземпляр класса:
+void Attach.tick(timer32_t &tmr, timer32_t period, void (*fn)());  // Функция-обрабогтчик для таймера.
+```
+## Примеры
+ - [Attach](https://github.com/German-source/MicroOS/blob/main/examples/AttachExample/AttachExample.ino)
+ - [Manage](https://github.com/German-source/MicroOS/blob/main/examples/ManageExample/ManageExample.ino)
+ - [Timer](https://github.com/German-source/MicroOS/blob/main/examples/TimerExample/TimerExample.ino)

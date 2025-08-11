@@ -12,10 +12,10 @@ class __manage__ {
     void attach(void (*fn)()) {
         _fn = fn;
     }
-    void tick() {
+    void tick(void) {
         (*_fn)();
     }
-    timer32_t read() {
+    timer32_t read(void) {
         return (_mode) ? millis() : micros();
     }
     private:
