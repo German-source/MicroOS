@@ -22,6 +22,9 @@ class __TMR__ {
         }
         return false;
     }
+    timer32_t getLeft(timer32_t &tmr) {
+        return read() - tmr;
+    }
     private:
     bool _is = true;
 };
