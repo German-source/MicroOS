@@ -11,3 +11,7 @@ control	KEYWORD2
 getLeft	KEYWORD2
 MicroOS	KEYWORD1
 TimerControl	KEYWORD1
+__manage__	KEYWORD1
+System	KEYWORD1
+tick	KEYWORD2
+attach	KEYWORD2
